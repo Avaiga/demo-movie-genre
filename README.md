@@ -1,4 +1,4 @@
-# Demo Sales Dashboard
+# Movie Genre Demo
 
 ## Usage
 - [Usage](#usage)
