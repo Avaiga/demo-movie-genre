@@ -32,9 +32,9 @@ This demo works with a Python version superior to 3.8. Install the dependencies 
 
 - `src/`: Contains the demo source code.
   - `src/data`: Contains the application data files. An Excel can be found here.
-- `CODE_OF_CONDUCT.md`: Code of conduct for members and contributors of _demo-sales-dashboard_.
-- `CONTRIBUTING.md`: Instructions to contribute to _demo-sales-dashboard_.
-- `INSTALLATION.md`: Instructions to install _demo-sales-dashboard_.
+- `CODE_OF_CONDUCT.md`: Code of conduct for members and contributors of _demo-movie-genre.
+- `CONTRIBUTING.md`: Instructions to contribute to _demo-movie-genre.
+- `INSTALLATION.md`: Instructions to install _demo-movie-genre.
 - `LICENSE`: The Apache 2.0 License.
 - `Pipfile`: File used by the Pipenv virtual environment to manage project dependencies.
 - `README.md`: Current file.
@@ -52,12 +52,12 @@ specific language governing permissions and limitations under the License.
 
 ## Installation
 
-Want to install _demo sales dashboard_? Check out our [`INSTALLATION.md`](INSTALLATION.md) file.
+Want to install _demo movie genre_? Check out our [`INSTALLATION.md`](INSTALLATION.md) file.
 
 ## Contributing
 
-Want to help build _demo sales dashboard_? Check out our [`CONTRIBUTING.md`](CONTRIBUTING.md) file.
+Want to help build _demo movie genre_? Check out our [`CONTRIBUTING.md`](CONTRIBUTING.md) file.
 
 ## Code of conduct
 
-Want to be part of the _demo sales dashboard_ community? Check out our [`CODE_OF_CONDUCT.md`](CODE_OF_CONDUCT.md) file.
+Want to be part of the _demo movie genre_ community? Check out our [`CODE_OF_CONDUCT.md`](CODE_OF_CONDUCT.md) file.
