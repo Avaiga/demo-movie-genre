@@ -13,7 +13,7 @@
 
 Taipy is a  low-code Python library for creating Business Applications. More information on our [website](https://www.taipy.io).
 
-[Demo Sales Dashboard](https://github.com/Avaiga/demo-movie-genre) demonstrates how Taipy can read an csv file and show interesting results. This will the base of our DataViz application. This demo creates a back-end execution, also called scenario in Taipy Core. Our scenario will filter movie data based on the genre you choose. This scenario will be submitted each time the genre selection changes and output the seven most popular movies of that genre.The output will be shown on Taipy GUI, where you will be able to select the genre.
+[Demo Movie Genre](https://github.com/Avaiga/demo-movie-genre) demonstrates how Taipy can read an csv file and show interesting results. This will the base of our DataViz application. This demo creates a back-end execution, also called scenario in Taipy Core. Our scenario will filter movie data based on the genre you choose. This scenario will be submitted each time the genre selection changes and output the seven most popular movies of that genre.The output will be shown on Taipy GUI, where you will be able to select the genre.
 
 ### Demo Type
 - **Level**: Basic
