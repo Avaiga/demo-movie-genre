@@ -49,7 +49,7 @@ scenario = tp.create_scenario(scenario_cfg)
 
 
 
-#Taipy GUI- front end definition
+# Taipy GUI- front end definition
 
 # Callback definition
 def modify_df(state):
