@@ -24,7 +24,7 @@ if __name__ == "__main__":
     # Input Data Nodes configuration
     initial_dataset_cfg = Config.configure_data_node(id="initial_dataset",
                                                     storage_type="csv",
-                                                    path="data.csv",
+                                                    path="data/data.csv",
                                                     scope=Scope.GLOBAL)
 
     selected_genre_cfg = Config.configure_data_node(id="selected_genre_node",
