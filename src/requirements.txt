@@ -1,2 +1,2 @@
-taipy==2.2
-pandas==1.5.3
+taipy==4.0.0.dev1
+pandas==2.2

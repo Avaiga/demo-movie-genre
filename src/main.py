@@ -1,4 +1,5 @@
 import taipy as tp
+import taipy.gui.builder as tgb
 import pandas as pd
 from taipy import Config, Scope, Gui
 
@@ -42,14 +43,12 @@ if __name__ == "__main__":
                                                 output=filtered_data_cfg,
                                                 skippable=True)
 
-    # Pipeline configuration
-    pipeline_cfg = Config.configure_pipeline(id="pipeline",
-                                            task_configs=[filter_task_cfg])
+
     # Scenario configuration
-    scenario_cfg = Config.configure_scenario(id="scenario", pipeline_configs=[pipeline_cfg])
+    scenario_cfg = Config.configure_scenario(id="scenario", task_configs=[filter_task_cfg])
 
     # Run of the Taipy Core service
-    tp.Core().run()
+    tp.Orchestrator().run()
 
     # Creation of my scenario
     scenario = tp.create_scenario(scenario_cfg)
@@ -65,15 +64,17 @@ if __name__ == "__main__":
     df = pd.DataFrame(columns=['Title', 'Popularity %'])
     selected_genre = None
 
-    # movie_genre_app
-    movie_genre_app = """
-# Film recommendation
+    with tgb.Page() as movie_genre_app:
+        tgb.text("# Film recommendation", mode="md")
 
-## Choose your favorite genre
-<|{selected_genre}|selector|lov={list_genres}|on_change=modify_df|dropdown|>
+        tgb.text("## Choose your favorite genre")
+        tgb.selector("{selected_genre}",
+                     lov=list_genres,
+                     on_change=modify_df,
+                     dropdown=True)
+        
+        tgb.text("## Here are the top 7 picks", mode="md")
+        tgb.chart("{df}", x="Title", y="Popularity %", type="bar", title="Film Popularity")
 
-## Here are the top 7 picks
-<|{df}|chart|x=Title|y=Popularity %|type=bar|title=Film Popularity|>
-    """
     # run the app
     Gui(page=movie_genre_app).run()
