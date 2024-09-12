@@ -33,5 +33,5 @@ jobs:
 
       - name: 'Build & push image'
         run: |
-          docker build -t ${{ vars.DOCKER_REGISTRY }}/movie-genre:develop .
-          docker push ${{ vars.DOCKER_REGISTRY }}/movie-genre:develop
+          docker build -t ${{ vars.DOCKER_REGISTRY }}/demo-movie-genre:develop .
+          docker push ${{ vars.DOCKER_REGISTRY }}/demo-movie-genre:develop
